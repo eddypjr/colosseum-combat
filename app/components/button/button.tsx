@@ -1,28 +1,26 @@
 'use client';
 import Link from 'next/link';
-import React from 'react'
+import React, { ComponentPropsWithoutRef } from 'react';
 
-type ButtonProps = {
+interface ButtonProps extends ComponentPropsWithoutRef<'a'> {
   goTo: string;
   text: string;
-
 }
 
-export default function Button({goTo, text}: ButtonProps) {
-    const goTop = () => {
-      window.scrollTo({
-        top: 0,
-      });
-    };
+export default function Button({
+  goTo,
+  text,
+  ...props
+}: ButtonProps): JSX.Element {
+  const goTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
 
   return (
-    <Link
-      onClick={goTop}
-      href={goTo}
-      className={`text-[15px] text-center pt-[18px] font-[600] w-[20rem] h-[5.5rem] uppercase hero-cta relative ml-2 `}
-    >
-      {text} &nbsp;
-    
+    <Link onClick={goTop} href={goTo} {...props}>
+      {text}
     </Link>
   );
 }
