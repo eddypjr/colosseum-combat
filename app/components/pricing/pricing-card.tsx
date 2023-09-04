@@ -7,25 +7,34 @@ type PricingCardProps = {
   image: StaticImageData | string;
   price: number;
   title: string;
+  descriptions: string[];
 };
 
-export default function PricingCard({ image, price, title }: PricingCardProps) {
+export default function PricingCard({
+  image,
+  price,
+  title,
+  descriptions,
+}: PricingCardProps) {
   return (
     <>
-      <div className="flex flex-col w-1/4 bg-white shadow-xl relative min540:w-[100%]">
+      <div className="flex flex-col w-1/4 maxXl:w-full bg-white shadow-xl relative">
         <div
           style={{ transition: 'all 0.3s' }}
           className="relative grayscale hover:grayscale-0"
         >
-          {/* <img src={img} alt="pricing_img" className="w-full h-full" /> */}
-          <Image src={image} alt="pricing_img" className="w-full h-[450px]" />
-          <div className="bg-white text-[20px] font-bold w-[25rem] text-center py-6 text-[#ff0336] -bottom-[18px] left-0 right-0 mx-auto">
+          <Image
+            src={image}
+            alt="pricing_img"
+            className="w-full h-[450px] maxSm:h-[350px]"
+          />
+          <div className="bg-white text-[24px] font-bold w-[25rem] text-center py-6 text-[#ffb703] left-0 right-0 mx-auto">
             {title}
           </div>
         </div>
         <div className="flex flex-col items-center pt-[20px] pb-[50px]">
           {/* price */}
-          <p className="text-center text-[55px] font-bold relative py-[10px] ">
+          <p className="text-center text-[55px] font-bold relative py-[2px] ">
             <span className="text-[30px] text-[#6d6d6d] absolute font-normal top-8 -left-[3rem]">
               $
             </span>
@@ -36,24 +45,17 @@ export default function PricingCard({ image, price, title }: PricingCardProps) {
             </span>
           </p>
           {/* text */}
-          <div className="flex flex-col text-[16px] font-medium text-center gap-8 text-[#646464] ">
-            <p>Free Hand</p>
-            <p>Gym Fitness</p>
-            <p>Weight Loss</p>
-            <p>Personal Trainer</p>
-            <p>Cycling</p>
+          <div className="flex flex-col text-[16px] font-medium text-center gap-8 text-[#646464]">
+            {descriptions.map((desc) => (
+              <p key={crypto.randomUUID()}>{desc}</p>
+            ))}
           </div>
 
-          <Button text="Sign Up Now" goTo="/contact" />
-
-          {/* <MainButton
-            color={`!text-white`}
-            bg={`bg-[#ff0336]`}
-            text="purchase now"
-            arrowColor={`!text-white`}
-            cN="pricing-cta"
+          <Button
+            text="Sign Up Now"
             goTo="/contact"
-          /> */}
+            className="text-[15px] mt-[15%] text-black hover:text-white bg-[#ffb703] text-center mt-5 pt-[18px] font-[600] w-[20rem] h-[5.5rem] uppercase hero-cta relative ml-2"
+          />
         </div>
       </div>
     </>
