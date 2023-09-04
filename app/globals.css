@@ -33,8 +33,6 @@ html {
   .color-logo {
     filter: invert(80%) sepia(18%) saturate(7146%) hue-rotate(353deg)
       brightness(103%) contrast(108%);
-      width: 75px;
-      height: 75px;
   }
 }
 
