@@ -10,16 +10,16 @@ export default function NavList() {
           </Link>
         </li>
         <li className="cursor-pointer hover:text-[#ffb703]">
+          <Link href="/about" className="text-gray-300 hover:text-[#ffb703]">
+            About
+          </Link>
+        </li>
+        <li className="cursor-pointer hover:text-[#ffb703]">
           <Link
             href="/schedule/monday"
             className="text-gray-300 hover:text-[#ffb703]"
           >
             Schedule
-          </Link>
-        </li>
-        <li className="cursor-pointer hover:text-[#ffb703]">
-          <Link href="/about" className="text-gray-300 hover:text-[#ffb703]">
-            About
           </Link>
         </li>
         <li className="cursor-pointer hover:text-[#ffb703]">

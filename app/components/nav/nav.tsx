@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Button from '../button/button';
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import Logo from '../images/logo.svg';
+import Logo from '../../icon.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import NavList from './navlist';
@@ -33,20 +33,21 @@ export default function Navbar() {
   const goTop = () => {
     window.scrollTo({
       top: 0,
+      behavior: 'smooth',
     });
   };
 
   return (
     <nav
-      className={`flex flex-row bg-transparent items-center justify-between py-3 px-12  fixed top-0 left-0 right-0 w-full z-50${
+      className={`flex flex-row bg-transparent items-center justify-between z-[9999999999] py-3 px-12  fixed top-0 left-0 right-0 w-full z-50${
         sticky ? 'shadow-xl !bg-black transition duration-300' : ''
       }`}
     >
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-[#ffb703] text-lg font-bold">
-          <Link href="/">
-            <Image src={Logo} alt="logo" className="logo hover:color-logo" />
-          </Link>
+          <div onClick={goTop}>
+            <Image src={Logo} alt="logo" className="logo hover:color-logo hover:cursor-pointer" />
+          </div>
         </div>
         <div className="nav-list">
           <NavList />
@@ -54,7 +55,7 @@ export default function Navbar() {
         <div className="flex items-center gap-10">
           <div className="flex gap-10">
             <div
-              className={`flex top-0 flex-col fixed w-full h-screen bg-white z-[9999999999] py-[60px] px-[40px] ease-in-out duration-500  ${
+              className={`flex top-0 flex-col fixed w-full h-screen z-[9999999999] bg-white py-[60px] px-[40px] ease-in-out duration-500  ${
                 hamburger ? 'left-0' : '-left-[100%]'
               }`}
             >
@@ -105,24 +106,6 @@ export default function Navbar() {
                   <Link
                     onClick={goTop}
                     className="text-[2rem] font-medium hover:text-[#ffb703] ease-in duration-200"
-                    href="/blog"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li onClick={hamburgerMenuHandler}>
-                  <Link
-                    onClick={goTop}
-                    className="text-[2rem] font-medium hover:text-[#ffb703] ease-in duration-200"
-                    href="/contact"
-                  >
-                    Contact
-                  </Link>
-                </li>
-                <li onClick={hamburgerMenuHandler}>
-                  <Link
-                    onClick={goTop}
-                    className="text-[2rem] font-medium hover:text-[#ffb703] ease-in duration-200"
                     href="/pricing"
                   >
                     Pricing
@@ -132,9 +115,9 @@ export default function Navbar() {
                   <Link
                     onClick={goTop}
                     className="text-[2rem] font-medium hover:text-[#ffb703] ease-in duration-200"
-                    href="/classes"
+                    href="/contact"
                   >
-                    Classes
+                    Contact
                   </Link>
                 </li>
               </ul>
