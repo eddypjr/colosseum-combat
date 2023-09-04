@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 /* base styles */
-body {
-  /* background-color: black; */
-  /* background: #ebf0fa; */
-  /* @apply text-gray-500 m-8; */
-  background-color: #ffb703;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 75%;
 }
 
 .container {
@@ -20,33 +23,115 @@ body {
   padding-right: 2.5rem;
 }
 
+@layer utilities {
+  .logo {
+    filter: invert(100%) sepia(0%) saturate(7482%) hue-rotate(257deg)
+      brightness(101%) contrast(103%);
+    width: 75px;
+    height: 75px;
+  }
+  .color-logo {
+    filter: invert(80%) sepia(18%) saturate(7146%) hue-rotate(353deg)
+      brightness(103%) contrast(108%);
+      width: 75px;
+      height: 75px;
+  }
+}
+
+.invert-logo {
+  filter: invert(80%) sepia(18%) saturate(7146%) hue-rotate(353deg)
+    brightness(103%) contrast(108%);
+  width: 75px;
+  height: 75px;
+}
+
 .hero-section {
-  background-image: url('./components/hero/hero.jpeg');
+  background-image: url('./images/hero/hero.jpeg');
   width: 100%;
   height: 110vh;
-  object-fit: cover;
+  object-fit: fill;
   background-size: cover;
   background-position: center center;
 }
 
+.classes-section {
+  background-image: url('./images/dot-bg.png');
+    background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+
+.page-gray-bg {
+  background-image: url('./images/gray-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.about-section {
+    background-image: url('./images/gray-bg.png');
+  background-position: center -100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
 .call-to-action {
-  background-image: url('./components/call-to-action/black-belt.jpeg');
+  background-image: url('./images/call-to-action/black-belt.jpeg');
   width: 100%;
-  height: 18rem;
-  background-position: center -177px;
+  height: 21rem;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .cta-section {
-  background-image: url('./components/personal-training/training.jpg');
+  background-image: url('./images/call-to-action/training.jpeg');
   object-fit: cover;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.image-background {
+  background-color: #ffb703;
+}
+
+.title {
+  background-image: url('./images/title-bg.svg');
+    object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* classes grid */
+.item-0,
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5 {
+  filter: grayscale(100%);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 2px 2px 8px 160px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.item-0:hover,
+.item-1:hover,
+.item-2:hover,
+.item-3:hover,
+.item-4:hover,
+.item-5:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+  box-shadow: inset 2px 2px 8px 160px rgba(0, 0, 0, 0);
+}
 
 .item-0-div {
   height: 30rem;
@@ -109,38 +194,38 @@ body {
 }
 
 .item-0 {
-  content: url('./components/classes/bjj.jpg');
+  content: url('./images/classes/bjj.jpg');
   width: 100%;
   height: 100%;
 }
 
 .item-1 {
-  content: url('./components/classes/mma.jpg');
+  content: url('./images/classes/mma.jpg');
   width: 100%;
   height: 100%;
 }
 
 .item-2 {
-  content: url('./components/classes/boxing.jpg');
+  content: url('./images/classes/boxing.jpg');
   width: 100%;
   height: 100%;
 }
 
 .item-3 {
-  content: url('./components/classes/no-gi.jpg');
+  content: url('./images/classes/no-gi.jpg');
   width: 100%;
   height: 100%;
 }
 
 .item-4 {
-  content: url('./components/classes/kb.jpg');
+  content: url('./images/classes/kb.jpg');
   width: 100%;
   height: 100%;
 }
 
 .item-5 {
-  /* background-image: url('./components/classes/strength.jpg'); */
-  content: url('./components/classes/strength.jpg');
+  /* background-image: url('./classes/strength.jpg'); */
+  content: url('./images/classes/strength.jpg');
   width: 100%;
   height: 100%;
 }
@@ -166,10 +251,9 @@ body {
   grid-row-end: 3;
   grid-column-end: 3;
 
-  background-image: url('./components/gallery/img6.jpg');
+  background-image: url('./images/gallery/img6.jpg');
   object-fit: cover;
   background-size: cover;
-  /* background-position: 0 510px; */
   background-repeat: no-repeat;
 }
 
@@ -181,10 +265,10 @@ body {
   grid-row-end: 4;
   grid-column-end: 2;
 
-  background-image: url('./components/gallery/img3.jpg');
+  background-image: url('./images/gallery/img3.jpg');
   object-fit: cover;
   background-size: cover;
-  background-position: 0px 0;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -196,7 +280,7 @@ body {
   grid-row-end: 4;
   grid-column-end: 3;
 
-  background-image: url('./components/gallery/img4.jpg');
+  background-image: url('./images/gallery/img4.jpg');
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -211,7 +295,7 @@ body {
   grid-row-end: 4;
   grid-column-end: 6;
 
-  background-image: url('./components/gallery/img1.jpg');
+  background-image: url('./images/gallery/img1.jpg');
   object-fit: cover;
   background-size: cover;
   background-position: 50% 0;
@@ -226,10 +310,10 @@ body {
   grid-row-end: 2;
   grid-column-end: 6;
 
-  background-image: url('./components/gallery/img5.jpg');
+  background-image: url('./images/gallery/img5.jpg');
   object-fit: cover;
   background-size: cover;
-  background-position: 0 -45px;
+  background-position: 0 -30px;
   background-repeat: no-repeat;
 }
 
@@ -241,10 +325,38 @@ body {
   grid-row-end: 4;
   grid-column-end: 4;
 
-  background-image: url('./components/gallery/img2.jpg');
-  /* height: 100%; */
+  background-image: url('./images/gallery/img2.jpg');
   background-size: cover;
-  background-position: -145px 0;
+  background-position: -115px 0;
+
   background-repeat: no-repeat;
   align-self: stretch;
+}
+
+.schedule-banner {
+  background-image: url('./schedule/schedule-banner.jpg');
+  object-fit: cover;
+  background-size: cover;
+  filter: grayscale(1);
+  background-position: center -250px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 45vh;
+}
+
+@media (max-width: 1200px) {
+  .schedule-banner {
+    background-position: center;
+  }
+}
+/* nav */
+
+@media (max-width: 1280px) {
+  .nav-list {
+    display: none;
+  }
+
+  .fa-bars {
+    display: flex;
+  }
 }

@@ -1,26 +1,25 @@
-import Link from 'next/link';
 import Hero from './components/hero/hero';
 import About from './components/about/about';
-import CallToAction from './components/call-to-action/call-to-action';
+import CallToActionTop from './components/call-to-action/call-to-action-top';
 import Coaches from './components/coaches/coaches';
 import Gallery from './components/gallery/gallery';
 import Pricing from './components/pricing/pricing';
 import Classes from './components/classes/classes';
-import PersonalTraining from './components/personal-training/personal-training';
-import Footer from './components/footer/footer';
+import CallToActionBottom from './components/call-to-action/call-to-action-bottom';
+import Spacer from './components/spacer/spacer';
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <About />
-      <CallToAction />
       <Classes />
+      <CallToActionTop />
       <Coaches />
-      <Gallery />
       <Pricing />
-      <PersonalTraining />
-      <Footer />
+      <Gallery />
+      <CallToActionBottom />
+      <Spacer />
     </main>
   );
 }
