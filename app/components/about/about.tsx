@@ -27,7 +27,7 @@ const About: React.FC = () => {
           </p>
         </div>
 
-        <Image src={AboutImage} alt="About Us" className="w-1/2 maxLg:w-full" />
+        <Image src={AboutImage} alt="About Us" className="w-1/2 maxLg:w-full" blurDataURL='URL' placeholder='blur' />
       </div>
     </section>
   );

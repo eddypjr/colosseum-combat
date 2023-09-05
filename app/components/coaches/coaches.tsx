@@ -56,6 +56,8 @@ export default function Coaches() {
               <Image
                 src={train.img}
                 alt="trainer"
+                blurDataURL='URL'
+                placeholder='blur'
                 style={{ transition: 'all 0.3s' }}
                 className={`w-[22rem] z-10 absolute grayscale mx-auto flex place-self-center h-3/4 py-5 ${
                   imgHover ? 'hover:grayscale-0' : ''

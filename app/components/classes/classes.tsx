@@ -1,5 +1,11 @@
 import Image from 'next/image';
 import TitleBg from '../../images/title-bg.svg';
+import BJJ from '../../images/classes/bjj.jpg';
+import Boxing from '../../images/classes/boxing.jpg';
+import KB from '../../images/classes/kb.jpg';
+import MMA from '../../images/classes/mma.jpg';
+import NoGi from '../../images/classes/no-gi.jpg';
+import Strength from '../../images/classes/strength.jpg';
 import Link from 'next/link';
 
 export default function Classes() {
@@ -23,7 +29,13 @@ export default function Classes() {
 
         <div className="grid grid-cols-4 grid-rows-2 gap-5 h-full mt-7 maxMd:flex maxMd:flex-col">
           <Link href={'/schedule/monday'} className="item-0-div relative">
-            <div className="item-0 ease-in duration-[0.4s]"></div>
+            <Image
+              src={BJJ}
+              alt="bjj"
+              blurDataURL="URL"
+              placeholder="blur"
+              className="item-0 w-full h-full ease-in duration-[0.4s]"
+            />
             <div className="absolute z-10 bottom-10 left-10">
               <p className="text-white text-[3rem] font-bold">
                 Brazilian Jiu Jitsu
@@ -35,7 +47,13 @@ export default function Classes() {
           </Link>
 
           <Link href={'/schedule/monday'} className="item-1-div relative">
-            <div className="item-1 ease-in duration-[0.4s]"></div>
+            <Image
+              src={MMA}
+              alt="MMA"
+              blurDataURL="URL"
+              placeholder="blur"
+              className="item-1 w-full h-full ease-in duration-[0.4s]"
+            />
             <div className="absolute z-10 bottom-10 left-10">
               <p className="text-white text-[3rem] font-bold">MMA</p>
               <p className="text-black bg-[#ffb703] text-[16px] mt-3 py-1 px-5">
@@ -45,7 +63,13 @@ export default function Classes() {
           </Link>
 
           <Link href={'/schedule/monday'} className="item-2-div relative">
-            <div className="item-2 ease-in duration-[0.4s]"></div>
+            <Image
+              src={Boxing}
+              alt="Boxing"
+              blurDataURL="URL"
+              placeholder="blur"
+              className="item-2 w-full h-full ease-in duration-[0.4s]"
+            />
             <div className="absolute z-10 bottom-10 left-10">
               <p className="text-white text-[3rem] font-bold">Boxing</p>
               <p className="text-black bg-[#ffb703] text-[16px] mt-3 py-1 px-5">
@@ -55,7 +79,13 @@ export default function Classes() {
           </Link>
 
           <Link href={'/schedule/monday'} className="item-3-div relative">
-            <div className="item-3 ease-in duration-[0.4s]"></div>
+            <Image
+              src={NoGi}
+              alt="No Gi Grappling"
+              blurDataURL="URL"
+              placeholder="blur"
+              className="item-3 w-full h-full ease-in duration-[0.4s]"
+            />
             <div className="absolute z-10 bottom-10 left-10">
               <p className="text-white text-[3rem] font-bold">
                 No Gi Grappling
@@ -67,7 +97,13 @@ export default function Classes() {
           </Link>
 
           <Link href={'/schedule/monday'} className="item-4-div relative">
-            <div className="item-4 ease-in duration-[0.4s]"></div>
+            <Image
+              src={KB}
+              alt="Kickboxing"
+              blurDataURL="URL"
+              placeholder="blur"
+              className="item-4 w-full h-full ease-in duration-[0.4s]"
+            />
             <div className="absolute z-10 bottom-10 left-10">
               <p className="text-white text-[3rem] font-bold">Kickboxing</p>
               <p className="text-black bg-[#ffb703] text-[16px] mt-3 py-1 px-5">
@@ -77,7 +113,13 @@ export default function Classes() {
           </Link>
 
           <Link href={'/schedule/monday'} className="item-5-div relative">
-            <div className="item-5 ease-in duration-[0.4s]"></div>
+            <Image
+              src={Strength}
+              alt="Strength & Conditioning"
+              blurDataURL="URL"
+              placeholder="blur"
+              className="item-5 w-full h-full ease-in duration-[0.4s]"
+            />
             <div className="absolute z-10 bottom-10 left-10">
               <p className="text-white text-[3rem] font-bold">
                 Strength & Conditioning

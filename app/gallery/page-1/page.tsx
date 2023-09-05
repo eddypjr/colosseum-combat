@@ -11,6 +11,8 @@ export default function GalleryPage1() {
           <div key={image.id}>
             <Image
               alt="gallery_img"
+              blurDataURL='URL'
+              placeholder='blur'
               className="w-full h-[30rem]"
               src={image.img}
             />

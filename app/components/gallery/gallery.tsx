@@ -13,6 +13,8 @@ export default function Gallery() {
         </p>
         <Image
           src={TitleBg}
+          blurDataURL='URL'
+          placeholder='blur'
           alt="text_bg"
           className="color-logo w-[21rem] absolute -top-[-8px]"
         />
