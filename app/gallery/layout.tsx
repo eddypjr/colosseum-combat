@@ -11,7 +11,7 @@ export default function GalleryLayout({
   const isActive = (pathname: string) => path === pathname;
   return (
     <section>
-      <div className="schedule-banner relative justify-center flex">
+      <div className="pages-banner relative justify-center flex">
         <h1 className="text-white absolute bottom-[25px] text-[3rem] font-bold">
           Gallery
         </h1>

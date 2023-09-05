@@ -20,7 +20,7 @@ export default function ScheduleLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <section className="">
-        <div className="schedule-banner relative justify-center flex">
+        <div className="pages-banner relative justify-center flex">
           <h1 className="text-white absolute bottom-[25px] text-[3rem] font-bold">
             Schedule by Day
           </h1>
