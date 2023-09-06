@@ -1,0 +1,158 @@
+[
+  {
+    "day": "Monday",
+    "classes": [
+      {
+        "class": "Strength & Conditioning",
+        "startTime": "8:00am",
+        "endTime": "9:00am",
+        "coach": "Eddie Bravo"
+      },
+      {
+        "class": "Boxing",
+        "startTime": "9:00am",
+        "endTime": "10:00am",
+        "coach": "Floyd Mayweather"
+      },
+      {
+        "class": "Brazilian Jiu Jitsu",
+        "startTime": "1:00pm",
+        "endTime": "2:00pm",
+        "coach": "Eddie Bravo"
+      },
+      {
+        "class": "Kickboxing",
+        "startTime": "4:00pm",
+        "endTime": "5:00pm",
+        "coach": "Stephen Thompson"
+      }
+    ]
+  },
+  {
+    "day": "Tuesday",
+    "classes": [
+      {
+        "class": "Kickboxing",
+        "startTime": "9:00am",
+        "endTime": "10:00am",
+        "coach": "Stephen Thompson"
+      },
+      {
+        "class": "Strength & Conditioning",
+        "startTime": "10:00am",
+        "endTime": "11:00am",
+        "coach": "Eddie Bravo"
+      },
+      {
+        "class": "Boxing",
+        "startTime": "4:00pm",
+        "endTime": "5:00pm",
+        "coach": "Floyd Mayweather"
+      }
+    ]
+  },
+  {
+    "day": "Wednesday",
+    "classes": [
+      {
+        "class": "Strength & Conditioning",
+        "startTime": "8:00am",
+        "endTime": "9:00am",
+        "coach": "Eddie Bravo"
+      },
+      {
+        "class": "Boxing",
+        "startTime": "9:00am",
+        "endTime": "10:00am",
+        "coach": "Floyd Mayweather"
+      },
+      {
+        "class": "Brazilian Jiu Jitsu",
+        "startTime": "1:00pm",
+        "endTime": "2:00pm",
+        "coach": "Eddie Bravo"
+      },
+      {
+        "class": "Kickboxing",
+        "startTime": "4:00pm",
+        "endTime": "5:00pm",
+        "coach": "Stephen Thompson"
+      }
+    ]
+  },
+  {
+    "day": "Thursday",
+    "classes": [
+      {
+        "class": "Kickboxing",
+        "startTime": "10:30am",
+        "endTime": "11:30am",
+        "coach": "Stephen Thompson"
+      },
+      {
+        "class": "Boxing",
+        "startTime": "1:00pm",
+        "endTime": "2:00pm",
+        "coach": "Floyd Mayweather"
+      },
+      {
+        "class": "Strength & Conditioning",
+        "startTime": "5:00pm",
+        "endTime": "6:00pm",
+        "coach": "Eddie Bravo"
+      }
+    ]
+  },
+  {
+    "day": "Friday",
+    "classes": [
+      {
+        "class": "Boxing",
+        "startTime": "9:00am",
+        "endTime": "10:00am",
+        "coach": "Floyd Mayweather"
+      },
+      {
+        "class": "Brazilian Jiu Jitsu",
+        "startTime": "11:00am",
+        "endTime": "12:00am",
+        "coach": "Eddie Bravo"
+      },
+      {
+        "class": "Kickboxing",
+        "startTime": "4:00pm",
+        "endTime": "5:00pm",
+        "coach": "Stephen Thompson"
+      },
+      {
+        "class": "Strength & Conditioning",
+        "startTime": "6:00pm",
+        "endTime": "7:00pm",
+        "coach": "Eddie Bravo"
+      }
+    ]
+  },
+  {
+    "day": "Saturday",
+    "classes": [
+      {
+        "class": "Kickboxing",
+        "startTime": "10:00am",
+        "endTime": "11:00am",
+        "coach": "Stephen Thompson"
+      },
+      {
+        "class": "Boxing",
+        "startTime": "1:00pm",
+        "endTime": "2:00pm",
+        "coach": "Floyd Mayweather"
+      },
+      {
+        "class": "Open Gym",
+        "startTime": "3:00pm",
+        "endTime": "6:00pm",
+        "coach": "Staff"
+      }
+    ]
+  }
+]
