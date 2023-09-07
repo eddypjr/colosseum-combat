@@ -6,6 +6,7 @@ let connectMongoDb: any;
 if (process.env.NEXT_PUBLIC_MONGODB_URI) {
   client = new MongoClient(process.env.NEXT_PUBLIC_MONGODB_URI);
   connectMongoDb = client.connect();
+  console.log('Connected to MongoDB');
 } else {
   console.log('MongoDB URI is not defined in the environment variables.');
 }

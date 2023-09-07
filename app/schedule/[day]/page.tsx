@@ -13,6 +13,7 @@ type FightClass = {
 
 async function getSchedule(day: string) {
   const response = await fetch(`https://colosseum-combat.vercel.app/${day}`);
+  console.log('response in getSchedule', response);
   const data = await response.json();
   return data;
 }
