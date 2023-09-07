@@ -1,9 +1,6 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import EddieBravo from '../../images/coaches/eddie-bravo.png';
-import WonderBoy from '../../images/coaches/wonderboy.png';
-import Floyd from '../../images/coaches/floyd.png';
 import TitleBg from '../../images/title-bg.svg';
 
 export default function Coaches() {
@@ -18,10 +15,23 @@ export default function Coaches() {
   };
 
   const trainers = [
-    { img: EddieBravo, name: 'Eddie Bravo', job: 'Brazilian Jiu Jitsu Coach' },
-    { img: WonderBoy, name: 'Stephen Thompson', job: 'Kickboxing Coach' },
-    { img: Floyd, name: 'Floyd Mayweather', job: 'Boxing Coach' },
+    {
+      img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887122/eddie-bravo_l0kjsp.webp',
+      name: 'Eddie Bravo',
+      job: 'Brazilian Jiu Jitsu Coach',
+    },
+    {
+      img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887118/wonderboy_qu4fcw.webp',
+      name: 'Stephen Thompson',
+      job: 'Kickboxing Coach',
+    },
+    {
+      img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887120/floyd_andvpj.webp',
+      name: 'Floyd Mayweather',
+      job: 'Boxing Coach',
+    },
   ];
+
   return (
     <section className="classes-section">
       <div
@@ -54,10 +64,12 @@ export default function Coaches() {
               className="relative cursor-pointer w-[35rem] maxXs:w-full flex flex-col select-none h-[350px]"
             >
               <Image
+                width={264}
+                height={262.5}
                 src={train.img}
                 alt="trainer"
-                blurDataURL='URL'
-                placeholder='blur'
+                blurDataURL="URL"
+                placeholder="blur"
                 style={{ transition: 'all 0.3s' }}
                 className={`w-[22rem] z-10 absolute grayscale mx-auto flex place-self-center h-3/4 py-5 ${
                   imgHover ? 'hover:grayscale-0' : ''

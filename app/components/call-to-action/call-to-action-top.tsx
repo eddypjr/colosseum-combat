@@ -11,7 +11,7 @@ export default function CallToActionTop() {
           <Button
             text="Join Now"
             goTo="/contact"
-            className="text-[15px] text-black maxMd:text-white hover:text-[#ffb703] bg-[#ffb703] maxLg:bg-black text-center pt-[18px] font-[600] w-[20rem] h-[5.5rem] uppercase hero-cta relative ml-2"
+            className="text-[15px] text-black maxLg:text-white maxLg:hover:text-[#ffb703] hover:text-white bg-[#ffb703] maxLg:bg-black text-center pt-[18px] font-[600] w-[20rem] h-[5.5rem] uppercase hero-cta relative ml-2"
           />
         </div>
       </div>
