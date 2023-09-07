@@ -1,11 +1,10 @@
 import Image from 'next/image';
-import AboutImage from '../../images/about/about.jpeg';
+import AboutImage from '../../images/about/about.webp';
 
 const About: React.FC = () => {
-
   return (
     <section className="about-section">
-      <div className="container page-padding  flex flex-row maxLg:flex-col maxLg:items-center  py-[12.5rem] gap-3">
+      <div className="container page-padding  flex flex-row maxLg:flex-col maxLg:items-center  py-[12.5rem] gap-3 relative">
         <div className="bg-black flex flex-col justify-evenly text-white px-12 py-8 w-1/2 maxLg:w-full">
           <h2 className="text-5xl maxXl:text-3xl font-semibold mb-4 uppercase text-left">
             About Colosseum Combat
@@ -27,7 +26,15 @@ const About: React.FC = () => {
           </p>
         </div>
 
-        <Image src={AboutImage} alt="About Us" className="w-1/2 maxLg:w-full" blurDataURL='URL' placeholder='blur' />
+        <Image
+          src="https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887141/about_jjeh7k.webp"
+          alt="About Us"
+          width={709.26}
+          height={473.2}
+          className="w-1/2 maxLg:w-full"
+          blurDataURL="URL"
+          placeholder="blur"
+        />
       </div>
     </section>
   );
