@@ -13,9 +13,8 @@ type FightClass = {
 
 async function getSchedule(day: string) {
   const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/schedule/${day}`);
-  console.log('response in getSchedule', response);
   const data = await response.json();
-  console.log('DATA', data);
+
   return data;
 }
 

@@ -92,7 +92,7 @@ export default function Navbar() {
                   <Link
                     onClick={goTop}
                     className="text-[2rem] font-medium hover:text-[#ffb703] ease-in duration-200"
-                    href="/schedule"
+                    href="/schedule/monday"
                   >
                     Schedule
                   </Link>

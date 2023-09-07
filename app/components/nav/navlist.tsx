@@ -16,7 +16,7 @@ export default function NavList() {
         </li>
         <li className="cursor-pointer hover:text-[#ffb703]">
           <Link
-            href="/schedule"
+            href="/schedule/monday"
             className="text-gray-300 hover:text-[#ffb703]"
           >
             Schedule
