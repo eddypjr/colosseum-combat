@@ -1,6 +1,5 @@
-import React from 'react';
-import PersonalTrainingCard from './personal-training-card';
 import Image from 'next/image';
+import PersonalTrainingCard from './personal-training-card';
 import TitleBg from '../../images/title-bg.svg';
 
 export default function PersonalTraining() {

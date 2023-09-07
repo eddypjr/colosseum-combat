@@ -1,13 +1,12 @@
-import { Inter } from 'next/font/google';
+import { Rubik } from 'next/font/google';
 import type { Metadata } from 'next';
-import Logo from './logo.svg';
 import './globals.css';
 
 // components
 import NavBar from './components/nav/nav';
 import Footer from './components/footer/footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const rubik = Rubik({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Colosseum Combat',
@@ -24,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={rubik.className}>
         <NavBar />
         {children}
         <Footer />

@@ -73,13 +73,11 @@ html {
   background-position: center -100px;
   background-size: cover;
   background-repeat: no-repeat;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .call-to-action {
   background-image: url('https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887139/black-belt_kuj0t2.webp');
-  width: 100%;
-  height: 21rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

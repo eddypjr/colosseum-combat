@@ -1,6 +1,4 @@
-import React from 'react';
-
-export default function Saturday() {
+export default function Sunday() {
   return (
     <>
       {/* boxes */}

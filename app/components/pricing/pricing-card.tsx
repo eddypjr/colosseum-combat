@@ -1,9 +1,8 @@
-import { StaticImageData } from 'next/image';
 import Button from '../button/button';
-import React from 'react';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { StaticImageData } from 'next/image';
 
 type PricingCardProps = {
   image: StaticImageData | string;

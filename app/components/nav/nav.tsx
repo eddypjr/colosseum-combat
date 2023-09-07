@@ -1,11 +1,11 @@
 'use client';
-import Link from 'next/link';
-import Button from '../button/button';
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
-import Logo from '../../icon.svg';
+import Button from '../button/button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import Image from 'next/image';
+import Link from 'next/link';
+import Logo from '../../icon.svg';
 import NavList from './navlist';
 
 export default function Navbar() {
@@ -47,7 +47,6 @@ export default function Navbar() {
         <div className="text-[#ffb703] text-lg font-bold">
           <div onClick={goTop}>
             <Image
-              
               src={Logo}
               alt="logo"
               className="logo hover:color-logo hover:cursor-pointer"

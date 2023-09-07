@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import React, { ComponentPropsWithoutRef } from 'react';
+import { ComponentPropsWithoutRef } from 'react';
 
 interface ButtonProps extends ComponentPropsWithoutRef<'a'> {
   goTo: string;

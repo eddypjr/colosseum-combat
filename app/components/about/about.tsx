@@ -4,7 +4,7 @@ import AboutImage from '../../images/about/about.webp';
 const About: React.FC = () => {
   return (
     <section className="about-section">
-      <div className="container page-padding  flex flex-row maxLg:flex-col maxLg:items-center  py-[12.5rem] gap-3 relative">
+      <div className="container page-padding flex flex-row maxLg:flex-col maxLg:items-center  py-[12.5rem] gap-3 relative">
         <div className="bg-black flex flex-col justify-evenly text-white px-12 py-8 w-1/2 maxLg:w-full">
           <h2 className="text-5xl maxXl:text-3xl font-semibold mb-4 uppercase text-left">
             About Colosseum Combat

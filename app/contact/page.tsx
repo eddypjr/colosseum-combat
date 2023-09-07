@@ -1,11 +1,10 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faXTwitter,
   faFacebookF,
   faInstagram,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from '../components/button/button';
 
 export default function Contact() {
@@ -22,10 +21,10 @@ export default function Contact() {
           {/* first col */}
           <div className="maxLg:flex maxLg:flex-col maxLg:mx-auto maxMd:w-[90%] maxSm:!w-full maxLg:w-3/5">
             <h2 className="text-black text-[36px] font-bold leading-[1.2]">
-              We're Here to Help Unleash Your Fighter Potential.
+              We&apos;re Here to Help Unleash Your Fighter Potential.
             </h2>
             <p className="text-[16px] w-[95%] text-[#646464] font-medium my-[40px]">
-              At Colosseum Combat, we're dedicated to helping you achieve your
+              At Colosseum Combat, we&apos;re dedicated to helping you achieve your
               ultimate fighting form. Our team of seasoned trainers and combat
               experts will collaborate closely with you to design a personalized
               training regimen that covers all aspects of MMA, boxing, and
