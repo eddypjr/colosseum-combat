@@ -1,8 +1,8 @@
 import { Params } from '@/app/schedule/[day]/page';
 import connectMongoDb from '@/app/utils/mongodb';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
-export async function GET({ params: { day } }: Params) {
+export async function GET(request: NextRequest, { params: { day } }: Params) {
   const client = await connectMongoDb;
   const db = client.db('colosseum-combat');
   const schedulesCollection = db.collection('schedule');
