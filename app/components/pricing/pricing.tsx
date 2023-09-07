@@ -1,9 +1,4 @@
-import React from 'react';
 import PricingCard from './pricing-card';
-import BJJ from '../../images/pricing/bjj.jpg';
-import KB from '../../images/pricing/kb.jpg';
-import Boxing from '../../images/pricing/boxing.jpg';
-import DropIn from '../../images/pricing/drop-in.jpg';
 import TitleBg from '../../images/title-bg.svg';
 import Image from 'next/image';
 
@@ -30,9 +25,9 @@ export default function Pricing() {
           <br /> with no commitment needed!
         </p>
 
-        <div className="flex gap-3 maxXl:flex-col maxXl:items-center  mt-20">
+        <div className="flex gap-3 maxLg:gap-5 maxXl:flex-col maxXl:items-center  mt-20">
           <PricingCard
-            image={DropIn}
+            image="https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887113/drop-in_f9cblo.webp"
             price={30}
             title="Drop In Class"
             descriptions={[
@@ -44,7 +39,7 @@ export default function Pricing() {
             ]}
           />
           <PricingCard
-            image={Boxing}
+            image="https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887109/boxing_jdy0ft.webp"
             price={215}
             title="Boxing"
             descriptions={[
@@ -56,7 +51,7 @@ export default function Pricing() {
             ]}
           />
           <PricingCard
-            image={KB}
+            image="https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887111/kb_vd06uc.webp"
             price={200}
             title="KickBoxing"
             descriptions={[
@@ -68,7 +63,7 @@ export default function Pricing() {
             ]}
           />
           <PricingCard
-            image={BJJ}
+            image="https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887107/bjj_rdbimi.webp"
             price={175}
             title="Brazilian Jiu Jitsu"
             descriptions={[
