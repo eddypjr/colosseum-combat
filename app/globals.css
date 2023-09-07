@@ -305,8 +305,8 @@ html {
     background-position: center;
   }
 }
-/* nav */
 
+/* nav */
 @media (max-width: 1280px) {
   .nav-list {
     display: none;
