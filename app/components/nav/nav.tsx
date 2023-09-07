@@ -135,7 +135,7 @@ export default function Navbar() {
           <Button
             text="Join Now"
             goTo="/contact"
-            className="text-[15px] text-black rounded-sm hover:text-white bg-[#ffb703] md:px-12 md:py-4 px-5 py-3 text-center font-[600] uppercase hero-cta relative ml-2"
+            className="text-[15px] text-black rounded-sm hover:text-white bg-[#ffb703] md:px-12 md:py-4 px-5 py-3 text-center font-[600] uppercase hero-cta relative ml-2 maxSm:hidden"
           />
         </div>
       </div>
