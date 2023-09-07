@@ -22,7 +22,7 @@ export default function Classes() {
         </h2>
 
         <div className="grid grid-cols-4 grid-rows-2 gap-5 h-full mt-7 maxMd:flex maxMd:flex-col">
-          <Link href={'/schedule/monday'} className="item-0-div relative">
+          <Link href={'/schedule/wednesday'} className="item-0-div relative">
             <Image
               width={706.5}
               height={360}
@@ -42,7 +42,7 @@ export default function Classes() {
             </div>
           </Link>
 
-          <Link href={'/schedule/monday'} className="item-1-div relative">
+          <Link href={'/schedule/friday'} className="item-1-div relative">
             <Image
               width={345.75}
               height={360}
@@ -78,7 +78,7 @@ export default function Classes() {
             </div>
           </Link>
 
-          <Link href={'/schedule/monday'} className="item-3-div relative">
+          <Link href={'/schedule/friday'} className="item-3-div relative">
             <Image
               width={345.75}
               height={0}
@@ -98,7 +98,7 @@ export default function Classes() {
             </div>
           </Link>
 
-          <Link href={'/schedule/monday'} className="item-4-div relative">
+          <Link href={'/schedule/tuesday'} className="item-4-div relative">
             <Image
               width={345.75}
               height={360}
@@ -111,7 +111,7 @@ export default function Classes() {
             <div className="absolute z-10 bottom-10 left-10">
               <p className="text-white text-[3rem] font-bold">Kickboxing</p>
               <p className="text-black bg-[#ffb703] text-[16px] mt-3 py-1 px-5 maxLg:w-fit">
-                Sunday: 6:00pm-7:00pm
+                Tuesday: 6:00pm-7:00pm
               </p>
             </div>
           </Link>
