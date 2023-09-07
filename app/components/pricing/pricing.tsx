@@ -21,7 +21,7 @@ export default function Pricing() {
           Membership Pricing Plan
         </h2>
         <p className="text-[#646464] font-medium text-[15px] ">
-          Can't decide? Come for a drop in class
+          Can&apos;t decide? Come for a drop in class
           <br /> with no commitment needed!
         </p>
 
