@@ -10,9 +10,11 @@ export default function GalleryPage1() {
         {firstPageImgs.map((image) => (
           <div key={image.id}>
             <Image
+              width={462}
+              height={360}
               alt="gallery_img"
-              blurDataURL='URL'
-              placeholder='blur'
+              blurDataURL="URL"
+              placeholder="blur"
               className="w-full h-[30rem]"
               src={image.img}
             />

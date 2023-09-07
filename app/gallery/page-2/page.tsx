@@ -10,6 +10,8 @@ export default function GalleryPage2() {
         {secondPageImages.map((image) => (
           <div key={image.id}>
             <Image
+              width={462}
+              height={360}
               alt="gallery_img"
               blurDataURL="URL"
               placeholder="blur"

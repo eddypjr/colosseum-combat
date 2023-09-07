@@ -1,63 +1,50 @@
-import Img1 from '../images/gallery-page/1.jpg';
-import Img2 from '../images/gallery-page/2.jpg';
-import Img3 from '../images/gallery-page/3.jpg';
-import Img4 from '../images/gallery-page/4.jpg';
-import Img5 from '../images/gallery-page/5.jpg';
-import Img6 from '../images/gallery-page/6.jpg';
-import Img7 from '../images/gallery-page/7.jpg';
-import Img8 from '../images/gallery-page/8.jpg';
-import Img9 from '../images/gallery-page/9.jpg';
-import Img10 from '../images/gallery-page/10.jpg';
-import Img11 from '../images/gallery-page/11.jpg';
-import Img12 from '../images/gallery-page/12.jpg';
-
 export const galleryImg = [
   {
-    img: Img1,
+    img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887082/1_ovxoe8.webp',
     id: 1,
   },
   {
-    img: Img2,
+    img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887084/2_hhcygw.webp',
     id: 2,
   },
   {
-    img: Img3,
+    img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887086/3_wd6j2e.webp',
     id: 3,
   },
   {
-    img: Img4,
+    img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887088/4_dnfhk0.webp',
     id: 4,
   },
   {
-    img: Img5,
+    img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887090/5_twjktl.webp',
     id: 5,
   },
   {
-    img: Img6,
+    img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887092/6_x7blga.webp',
     id: 6,
   },
   {
-    img: Img7,
+    img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887080/7_osfuqv.webp',
     id: 7,
   },
   {
-    img: Img8,
+    img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887094/8_ibiqji.webp',
     id: 8,
   },
   {
-    img: Img9,
+    img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887096/9_g1tued.webp',
     id: 9,
   },
   {
-    img: Img10,
+    img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887099/10_qobqb3.webp',
     id: 10,
   },
   {
-    img: Img11,
+    img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887100/11_y19ibt.webp',
     id: 11,
   },
   {
-    img: Img12,
+    img: 'https://res.cloudinary.com/dxzi6ahcb/image/upload/f_auto,q_auto/v1693887103/12_qrfvvt.webp',
     id: 12,
   },
 ];
