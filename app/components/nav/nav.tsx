@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import Button from '../button/button';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Logo from '../../icon.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -46,7 +46,12 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-[#ffb703] text-lg font-bold">
           <div onClick={goTop}>
-            <Image src={Logo} alt="logo" className="logo hover:color-logo hover:cursor-pointer" />
+            <Image
+              
+              src={Logo}
+              alt="logo"
+              className="logo hover:color-logo hover:cursor-pointer"
+            />
           </div>
         </div>
         <div className="nav-list">
@@ -88,7 +93,7 @@ export default function Navbar() {
                   <Link
                     onClick={goTop}
                     className="text-[2rem] font-medium hover:text-[#ffb703] ease-in duration-200"
-                    href="/schedule/monday"
+                    href="/schedule"
                   >
                     Schedule
                   </Link>
