@@ -15,15 +15,15 @@
 <h3 align='center'>Home Page 🏡</h3>
 
 <div align='center'>
-<img src="https://i.ibb.co/sbPxFhn/home-Large.webp" alt="home" border="0">
+<img src="https://i.ibb.co/cNH1YCc/home.webp" alt="home" border="0">
 </div>
 
 <br>
 <br>
 
-<h3 align='center'>About Page 👇</h3>
+<h3 align='center'>Gallery Page 👇</h3>
 <div align='center'>
-<img src="https://i.ibb.co/zZvbGSg/shop-Large.webp" alt="about" border="0">
+<img src="https://i.ibb.co/tMHvHM9/gallery.webp" alt="gallery" border="0">
 </div>
 
 <br>
@@ -31,7 +31,7 @@
 
 <h3 align='center'>Schedule Page 👇</h3>
 <div align='center'>
-  <img src="https://i.ibb.co/6sXgMSL/product.webp" alt="schedule" border="0">
+  <img src="https://i.ibb.co/nqpSqZq/schedule.webp" alt="schedule" border="0">
 </div>
 
 <br>
@@ -39,7 +39,7 @@
 
 <h3 align='center'>Pricing Page 👇</h3>
 <div align='center'>
-  <img src="https://i.ibb.co/6FfCnBk/checkout.webp" alt="pricing" border="0">
+  <img src="https://i.ibb.co/dmjWtSy/pricing.webp" alt="pricing" border="0">
 </div>
 
 <br>
@@ -47,5 +47,5 @@
 
 <h3 align='center'>Mobile View 👇</h3>
 <div align='center'>
-<img src="https://i.ibb.co/5FxnZHs/mobile.webp" alt="mobile" border="0">
+<img src="https://i.ibb.co/mGx0tfz/Screenshot-2023-09-08-at-9-51-39-AM.webp" alt="mobile" border="0">
 </div>
