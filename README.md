@@ -1,4 +1,4 @@
-<div align='center'><img src="./src/assets/svg/logo.svg" alt="black-Logo" border="0" color="black"></div>
+<div align='center'><img src="./app/icon.svg" alt="black-Logo" border="0" color="black"></div>
 
 <h2>Description</h2>
 <p>Discover <b>Colosseum Combat</b>, a full stack martial arts gym that utilizes the new Server Components of Next 13.</p>
