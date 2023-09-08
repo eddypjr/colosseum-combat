@@ -24,11 +24,11 @@ export default function Contact() {
               We&apos;re Here to Help Unleash Your Fighter Potential.
             </h2>
             <p className="text-[16px] w-[95%] text-[#646464] font-medium my-[40px]">
-              At Colosseum Combat, we&apos;re dedicated to helping you achieve your
-              ultimate fighting form. Our team of seasoned trainers and combat
-              experts will collaborate closely with you to design a personalized
-              training regimen that covers all aspects of MMA, boxing, and
-              kickboxing, propelling you toward your specific goals.
+              At Colosseum Combat, we&apos;re dedicated to helping you achieve
+              your ultimate fighting form. Our team of seasoned trainers and
+              combat experts will collaborate closely with you to design a
+              personalized training regimen that covers all aspects of MMA,
+              boxing, and kickboxing, propelling you toward your specific goals.
             </p>
             <div className="grid grid-cols-2 grid-rows-2 gap-y-20 maxSm:gap-y-15 maxSm:grid-cols-1 maxSm:mx-auto">
               <div className="flex flex-col relative">
@@ -118,6 +118,19 @@ export default function Contact() {
               className="text-black bg-[#ffb703] w-fit py-[15px] px-[30px] font-bold text-[14px] uppercase self-center mt-6 hover:text-white"
             />
           </form>
+        </div>
+        <div style={{ width: '100%' }}>
+          <iframe
+            title="map"
+            loading="lazy"
+            style={{
+              width: '100%',
+              height: '600px',
+              border: '0px'
+            }}
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=9623%20Santa%20Monica%20Blvd,%20Los%20Angeles%20CA%2090210+(Colosseum%20Combat)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          >
+          </iframe>
         </div>
       </section>
     </>
