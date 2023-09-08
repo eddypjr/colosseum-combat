@@ -4,11 +4,11 @@
 <p>Discover <b>Colosseum Combat</b>, a full stack martial arts gym that utilizes the new Server Components of Next 13.</p>
 
 <h3>Built with:</h3>
-
 - MongoDB
 - NextJS 13
 - TypeScript
 - TailwindCSS
+- Vercel
 
 <h2>Screenshots of the Project 📸</h2>
 <br>
